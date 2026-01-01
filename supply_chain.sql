@@ -19,12 +19,7 @@ demand_forecast INT
 );
 SHOW VARIABLES LIKE 'local_infile';
 SET GLOBAL local_infile = 1;
-LOAD DATA LOCAL INFILE '/Users/muhammedmushfiq/Downloads/supply_chain_dataset1.csv'
-INTO TABLE raw_inventory_data
-FIELDS TERMINATED BY ','
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
+
 SET GLOBAL local_infile = 0;
 SELECT COUNT(*) FROM raw_inventory_data;
 
@@ -507,6 +502,8 @@ FROM (
 ) t
 ORDER BY total_value DESC;
 -- few SKUs dominate the revenue → that’s why A is “small % of SKUs but large % of value.”
+-- “ABC classification identified 27 ‘A’ SKUs (~54% of total SKUs) contributing ~70% of revenue, highlighting a 
+-- small set of high-value SKUs that should be prioritized for inventory control and stockout prevention.”
 
 WITH abc_classification AS (
    SELECT
