@@ -122,7 +122,7 @@ supporting inventory optimization, demand planning, and operational risk reducti
 | SKU_44  | 36683        | 36650          | 33             | 2.43              | 0.09                |
 | SKU_17  | 36449        | 36411          | 38             | 2.42              | 0.10                |
 
-**Insight:**  
+> **Insight:**  
 Analysis of forecast accuracy revealed SKU_47, SKU_44, and SKU_17 were slightly under-forecasted, while SKU_24 and SKU_23 were over-forecasted. The mean absolute errors ranged from 2.42 to 2.44, indicating potential inefficiencies in demand planning. These SKUs are prime candidates for forecast adjustments to reduce overstock and stockout risk.
 
 ### 📊 Supplier Lead Time vs Near-Stockout Risk
@@ -135,7 +135,7 @@ Analysis of forecast accuracy revealed SKU_47, SKU_44, and SKU_17 were slightly 
 | SUP_6      | 6                      | 7300          | 957              | 13.11                     |
 | SUP_5      | 12                     | 8395          | 905              | 10.78                     |
 
-**Insight:**  
+> **Insight:**  
 Near-stockout risk occurs across both short- and long-lead-time suppliers. SUP_2 showed high risk despite a short lead time, while SUP_5 ranked mid-range, highlighting that reorder points, safety stock, and demand patterns drive inventory risk more than lead time.
 
 ### 📊 Reorder Point Effectiveness (SKU-Level Near-Stockout Risk)
@@ -148,7 +148,7 @@ Near-stockout risk occurs across both short- and long-lead-time suppliers. SUP_2
 | SKU_3  | 1825       | 520              | 28.49                     |
 | SKU_10 | 1825       | 459              | 25.15                     |
 
-**Insight:**  
+> **Insight:**  
 SKU_3 shows demand-driven near-stockout risk, while SKU_18, SKU_49, and SKU_8 face planning-related risks despite moderate turnover. SKU_50 maintains high demand without near-stockout issues, reflecting effective inventory planning.
 
 ### 📊 ABC Classification – SKU Prioritization
@@ -161,7 +161,7 @@ SKU_3 shows demand-driven near-stockout risk, while SKU_18, SKU_49, and SKU_8 fa
 | SKU_38 | 1,014,731.18 | 13.55% | A         |
 | SKU_35 |   950,016.87 | 16.55% | A         |
 
-**Insight:**  
+> **Insight:**  
 A small set of 27 high-value SKUs (~54% of total SKUs) contributes ~70% of revenue, emphasizing the need to prioritize these SKUs for inventory control and stockout prevention.
 
 
